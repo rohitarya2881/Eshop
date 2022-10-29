@@ -1,0 +1,90 @@
+body{
+	background-color: rgb(109, 109, 100);
+}
+.welcome
+{
+	background-color: aliceblue;
+	width :90px;
+	height: 30px;
+     
+}
+.welcome a
+{
+	padding: 10px;
+	margin-top: -5px;
+	position: absolute;
+	color: black;
+	font-size: medium;
+}
+.welcome:hover
+{
+	background-color: aqua;
+}
+
+.container
+{    
+	height: 30px;
+	background-color: #1b1b1b;
+	
+}
+.container ul.menu
+{
+float: right;
+position: relative;
+top: -45px;
+right: 10px;
+
+}
+.container ul.menu >  li
+{
+ display: inline-block;
+ list-style: none;
+ padding: 5px;
+ color: aliceblue;
+ 
+ }a{
+	color: rgb(245, 237, 237);
+	font-size: 13px;
+	
+
+ }
+.container ul.menu a:hover
+{
+background-color: aliceblue;
+color: black;
+font-weight: 800;
+}
+
+nav
+{    
+	height : 60px;
+	background-color: rgb(204, 204, 204);
+	
+}
+nav .nav_2
+{
+	display: flex;
+	padding: 5px;
+	list-style-type: none;
+}
+nav .nav_2 a{
+	font-size: 20px;
+	padding: 20px;
+	color: black;
+}
+nav .nav_1 img{
+	height :50px;
+	position: relative;
+	top: -10px;
+}
+nav .nav_2  a{
+	position: relative;
+	top: 10px;
+}
+nav .nav_2  a:hover{
+	background-color: rgb(238, 238, 238);
+}
+nav .nav_1 .noHover{
+	text-decoration: none;
+	pointer-events: none;
+}
