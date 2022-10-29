@@ -1,5 +1,6 @@
 body{
-	background-color: rgb(109, 109, 100);
+	background-color: #f2f2f2
+;
 }
 .welcome
 {
@@ -58,14 +59,17 @@ font-weight: 800;
 nav
 {    
 	height : 60px;
-	background-color: rgb(204, 204, 204);
-	
+	background-color: #ffffff	;
+	list-style-type: none;
 }
 nav .nav_2
 {
 	display: flex;
 	padding: 5px;
 	list-style-type: none;
+	margin-left: 60px;
+     position: relative;
+	 bottom: 20px;
 }
 nav .nav_2 a{
 	font-size: 20px;
@@ -75,16 +79,29 @@ nav .nav_2 a{
 nav .nav_1 img{
 	height :50px;
 	position: relative;
-	top: -10px;
+	top: -0px;
+	list-style-type: none;
+	text-decoration: none;
+
 }
 nav .nav_2  a{
+	
 	position: relative;
-	top: 10px;
+	top: -20px;
 }
 nav .nav_2  a:hover{
-	background-color: rgb(238, 238, 238);
+	background-color: #3f3f3f;
+	color: #f2f2f2;
 }
 nav .nav_1 .noHover{
 	text-decoration: none;
 	pointer-events: none;
+	list-style-type: none;
+	position: relative;
+	right: 25px;
+	top: 2px;
+	bottom: 10px;
+}ul
+{
+	list-style-type: none;
 }

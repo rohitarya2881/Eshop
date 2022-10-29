@@ -31,6 +31,7 @@
         <nav>
        <ul class="nav_1">
             <li><a href="index.php" class= "btn noHover"><img src="pics/ELOGO.png"></a></li>
+			<div class="nav_2">
             <li><a href="#">Home</a></li>
 			<li><a href="#">Shop</a></li>
 			<li><a href="#">My Account</a></li>
@@ -39,8 +40,6 @@
 			<li><a href="#">Services</a></li>
 			<li><a href="#">Contact Us</a></li>
 </ul>
-        </nav>
-
-
+        </nav></div>
 </body>
 </html>
