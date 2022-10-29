@@ -93,7 +93,7 @@ nav .nav_2  a:hover{
 	background-color: #3f3f3f;
 	color: #f2f2f2;
 }
-nav .nav_1 .noHover{
+nav .nav_1 .noHover{                            /*no hover on mouse */
 	text-decoration: none;
 	pointer-events: none;
 	list-style-type: none;
