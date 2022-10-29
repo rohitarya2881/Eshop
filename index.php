@@ -40,6 +40,9 @@
 			<li><a href="#">Services</a></li>
 			<li><a href="#">Contact Us</a></li>
 </ul>
+      <div class="cart_icon"><a href="#">
+		<img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"  alt="shopping cart " />
+	</a></div>
         </nav></div>
 </body>
 </html>

@@ -105,3 +105,12 @@ nav .nav_1 .noHover{                            /*no hover on mouse */
 {
 	list-style-type: none;
 }
+.cart_icon img
+{
+	float: right;
+	height: 30px;
+	position: relative;
+	top: -90px;
+	right: 10px;
+	
+}
