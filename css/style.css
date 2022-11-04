@@ -1,13 +1,18 @@
-body{
-	background-color: #f2f2f2;
-	
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #d7e4e9;
+	overflow-x: hidden;
+	padding: 0;
+
 }
 .welcome
 {
 	background-color: aliceblue;
-	width :90px;
+	width : 90px;
 	height: 30px;
-     
+
 }
 .welcome a
 {
@@ -22,13 +27,13 @@ body{
 	background-color: aqua;
 }
 
-.container                                       /* top navigation or header */
+.container
 {    
 	height: 30px;
 	background-color: #1b1b1b;
-	
+
 }
-.container ul.menu
+.container ul.menu_1
 {
 float: right;
 position: relative;
@@ -36,231 +41,165 @@ top: -45px;
 right: 10px;
 
 }
-.container ul.menu >  li
+.container ul.menu_1 >  li
 {
  display: inline-block;
  list-style: none;
  padding: 5px;
  color: aliceblue;
- 
+
  }a{
 	color: rgb(245, 237, 237);
 	font-size: 13px;
-	
+
 
  }
-.container ul.menu a:hover
+.container ul.menu_1 a:hover
 {
 background-color: aliceblue;
 color: black;
 font-weight: 800;
 }
-
-
-
-@media screen and (max-width:400px)   /* hiding my_account and go to cart option from header */
+#toggle,label
 {
-	.container ul.menu .my_account {
-		display: none;
-	}
-	.container ul.menu .go_to_cart
-	{
-		display: none;
-	}
-
-	
-}
-
-@media screen and (min-width:960px)  {
-	
-
-.slide,.sidebar ul a{
-
 	display: none;
-}}
-
-.slide .sidebar
+}
+.nav  img
 {
-	height: 70%;
-	width: 200px;
-	background-color: #1b1b1b;
-	color: #f2f2f2;
-	position: absolute;
-	right: 10px;
- top:125px;
-	border-radius: 5px;
-	background-color: #3f3f3f;
-}
-.slide .sidebar ul a {
-	font-size: 16px;
-	padding: 10px;
-	border-bottom: 0.5px solid #fff;
-	display: block;
-	text-align-last: center;
-	background-color: #3f3f3f;
-}
-.sidebar header
-{
-	text-align-last: center;
-	padding-top: 10px;
-	font-weight: bolder;
-	font-size: 25px;
-	background-color: #3f3f3f;
-}
-.slide .sidebar ul a:hover {
-	font-size: 18px;
-	background-color: #fff;
-	color: #1b1b1b;
-}
-.slide  #btn,#check,#cancel
-{
-	position: absolute;
-	right: 40px;
-	top:70px;
-}
-
-.slide  #cancel
-{
-	position: absolute;
-	position: absolute;
-	right: 15px;
-	
-	
-}
-
-
-
-
-
-nav                                        /* main navigation  */
-{    
-	height : 60px;
-	background-color: #ffffff	;
-	list-style-type: none;
-}
-nav .nav_2
-{
-	display: flex;
-	padding: 5px;
-	list-style-type: none;
-	margin-left: 60px;
-     position: relative;
-	 bottom: 20px;
-}
-
-nav .nav_2 a{
-	font-size: 10px;
-	padding: 2px;
-	color: black;
-}
-nav .nav_1 img{                        /* logo of eshop */
-	height :50px;
-	}
-@media screen and (max-width:900px){
-	nav .nav_1 img{                        /* logo of eshop */
-		position: absolute;
-		top: 5px;
-		
-	
-	
-	}
-}
-
-
-
-nav .nav_2  a{                        /*main navigation */
-	
-	position: relative;
-	top: -20px;
-}
-nav .nav_2  a:hover{                                 /* canginging color in main navigation */
-	background-color: #3f3f3f;
-	color: #f2f2f2;
-}
-nav .nav_1 .noHover{                            /*no hover on mouse */
-	text-decoration: none;
 	pointer-events: none;
-	list-style-type: none;
+	height: 50px;
 	position: relative;
-	right: 25px;
-	top: 2px;
-	bottom: 10px;
-}ul
-{
-	list-style-type: none;
-}@media screen and (max-width: 960px) {       /*on reducing size test size also reduce of navigation */
-	nav .nav_2 a{
-	  font-size: 2vw;
-	  padding: 0.9vw;
-	  font-weight: 1000;
-	  overflow: hidden;
-	  display: none;
-	}
-  }
-  @media screen and (min-width: 960px) {       /*on reducing size test size also reduce of navigation */
-	nav .nav_2 a{
-	  font-size: 1.5vw;
-	  padding: 0.5vw;
-	  
-	}
-  }
-
-nav   .search
-{
-  position: relative;
-  top: -80px;
-  float: right;
-}
-nav form.search {                  /* search box */
-	background-color: #9fa1a0;
-	color: black;
 	padding: 10px;
-	position: relative;
-	right: 20px;
-	top: -95px;
-
+	margin-left: 10px;
 }
-
-	
-@media screen and (max-width:450px)  {
-	nav .nav_1 img{                        /* logo of eshop */
-		display: none;
-		
-	
-	
-	}
-	
-}
-
-
-
-
-@media screen and (max-width:960px){
-	nav form.search { 
-        position: absolute;
-		right: 120px;
-		top: 65px;
-
-	}
-	
-}
-
-
-
-.cart_icon img                              /* cart */
+.nav
 {
+	height: 70px;
+	background-color: #7575dd;
+	
+	margin-top: 10px;
+	
+
+}.nav .menu { 
+display: block;
+position: relative;
+left: 80px;
+bottom: 50px;
+
+    
+}
+.nav .menu a{
+	color: #1b1b1b;
+	font-size: medium;
+	padding: 0.5em;
+}
+.nav .menu a:hover{
+background-color:#5252d4;
+color: aliceblue;
+
+}
+@media  screen and (max-width: 700px)
+ {
+
+    .nav label {
+        display: block;
+        cursor: pointer;
+		position: relative;
+		float: right;
+		top: 22px;
+	     right: -210px
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+		position: relative;
+		top: 10px;
+		background-color: aliceblue;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+		display: none;
+        margin: 0;
+		position: relative;
+		right: 55px;
+     
+    }
+    #toggle:checked ~ .menu a {
+        display: block;
+		
+
+    }
+    
+    
+}
+
+
+
+ .cart_icon  img                        /* cart */
+{   position: relative;
 	float: right;
-	height: 30px;
-	position: relative;
-	top: -90px;
-	right: 10px ;
+	height: 25px;
+	bottom: 47px;
+	right: 45px;
+	
 	
 }
-@media screen and (max-width:960px) {
-	  nav .cart_icon img                              /* cart */
+
+.search  a label                       /* search icon */
+{   position: absolute;
+	float: right;
+	height: 10px;
+	top: 62px;
+	right: 79px;
+	cursor: pointer;
+	display: inline;
+
+}
+@media  screen and (min-width: 700px)
+ {
+	.search  a label                       /* search icon */
+	{
+ right: 30px;
+ top: -45px;
+
+	}
+   
+
+ }
+@media  screen and (min-width: 700px)
+ { .search 
+	{   position: relative;
+		right:10px;
+		
+	}
+}
+@media  screen and (min-width: 700px)
+ { .cart_icon
+	{   position: relative;
+		right:-40px;
+		top: 2px;
+		
+	}
+}
+.searchbox
+
 {  position: absolute;
-top:65px;
-right: 70px;
+	width:95%;
+	height:40px;
+	margin-left: 30px;
+	display: none;
+}
+.searchbox input
 
-}}
+{  
+	width:100%;
+	height:40px;
+	
+}
 
+#toggle_2:checked ~ .searchbox
+{
+	display: contents;
+}
