@@ -18,16 +18,17 @@ html, body {
 {
 	padding: 10px;
 	margin-top: -5px;
-	position: absolute;
+	position: relative;
 	color: black;
 	font-size: medium;
+	font-weight: bolder;
 }
 .welcome:hover
 {
 	background-color: aqua;
 }
 
-.container
+.container            /* top navigation bar*/
 {    
 	height: 30px;
 	background-color: #1b1b1b;
@@ -60,7 +61,7 @@ background-color: aliceblue;
 color: black;
 font-weight: 800;
 }
-#toggle,label
+#toggle,label           
 {
 	display: none;
 }
@@ -72,10 +73,10 @@ font-weight: 800;
 	padding: 10px;
 	margin-left: 10px;
 }
-.nav
+.nav           /* second navigation bar */
 {
 	height: 70px;
-	background-color: #7575dd;
+	background-color: #F3F3F3;
 	
 	margin-top: 10px;
 	
@@ -89,18 +90,19 @@ bottom: 50px;
     
 }
 .nav .menu a{
-	color: #1b1b1b;
+	color: #283747;
 	font-size: medium;
 	padding: 0.5em;
+	font-weight: bolder;
 }
 .nav .menu a:hover{
-background-color:#5252d4;
+background-color:#12232E;
 color: aliceblue;
 
 }
-@media  screen and (max-width: 700px)
+@media  screen and (max-width: 750px) /* on less than 700px hamburger menu appers */
  {
-
+    
     .nav label {
         display: block;
         cursor: pointer;
@@ -110,28 +112,31 @@ color: aliceblue;
 	     right: -210px
     }
     .menu {
-        text-align: center;
-        width: 100%;
+        
+        width: 30%;
         display: none;
-		position: relative;
-		top: 10px;
-		background-color: aliceblue;
+		top: 5px;
+	    right: 0px;
+		margin-left: 50%;
+		z-index: 999;
     }
     .menu a {
+		background-color: rgb(222, 224, 222);
         display: block;
         border-bottom: 1px solid #EAEAEB;
 		display: none;
         margin: 0;
 		position: relative;
-		right: 55px;
-     
+		right: 0px;
+		text-align: center;
+		
     }
     #toggle:checked ~ .menu a {
         display: block;
 		
 
     }
-    
+  
     
 }
 
@@ -146,36 +151,50 @@ color: aliceblue;
 	
 	
 }
-
-.search  a label                       /* search icon */
-{   position: absolute;
+.search  a label                      /* search icon */
+{   position: relative;
+	display: inline;
 	float: right;
 	height: 10px;
-	top: 62px;
-	right: 79px;
+	top: -48px;
+	
+	right: 50px;
 	cursor: pointer;
-	display: inline;
+	margin-bottom: 10px;
+	
 
 }
-@media  screen and (min-width: 700px)
+
+
+@media  screen and (min-width: 750px)
  {
 	.search  a label                       /* search icon */
 	{
- right: 30px;
+ right: 10px;
  top: -45px;
 
 	}
+	.cart_icon  img                        /* cart */
+{   position: relative;
+	float: right;
+	height: 25px;
+	bottom: 40px;
+	right: 45px;
+	
+	
+}
    
 
  }
-@media  screen and (min-width: 700px)
+@media  screen and (min-width: 750px)
  { .search 
 	{   position: relative;
 		right:10px;
-		
+        top: 5px;   
+	
 	}
 }
-@media  screen and (min-width: 700px)
+@media  screen and (min-width: 750px)
  { .cart_icon
 	{   position: relative;
 		right:-40px;
@@ -183,23 +202,66 @@ color: aliceblue;
 		
 	}
 }
+
 .searchbox
 
-{  position: absolute;
-	width:95%;
-	height:40px;
-	margin-left: 30px;
+{  
 	display: none;
 }
 .searchbox input
 
 {  
 	width:100%;
-	height:40px;
+	height:30px;
+	position: relative;
+	bottom: 23px;
+
 	
 }
 
 #toggle_2:checked ~ .searchbox
 {
 	display: contents;
+}
+.slider
+{  margin-left: 45px;
+	overflow: hidden;
+	height: 450px;
+	align-items: center;
+}
+.slider figure div
+{
+float: left;
+width: 20%;
+}
+.slider figure img{
+	width: 100%;
+	float: left;
+	z-index: 100;
+}
+.slider figure
+{
+	position: relative;
+	width :500%;
+	margin: 0px;
+	left : 0;
+    animation: 20s slide infinite;
+
+
+}
+@keyframes slide{
+0%{
+	left:0;
+}25%{
+	left: -100%;
+}50%{
+	left:-200%
+}
+75%{
+	left:-300%
+}
+100%{
+	left:-400%
+}
+
 }
