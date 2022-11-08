@@ -7,14 +7,14 @@ html, body {
 	padding: 0;
 
 }
-.welcome
+.eshop
 {
 	background-color: aliceblue;
 	width : 90px;
 	height: 30px;
 
 }
-.welcome a
+.eshop a
 {
 	padding: 10px;
 	margin-top: -5px;
@@ -23,7 +23,7 @@ html, body {
 	font-size: medium;
 	font-weight: bolder;
 }
-.welcome:hover
+.eshop:hover
 {
 	background-color: aqua;
 }
